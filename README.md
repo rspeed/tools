@@ -17,10 +17,11 @@ Several dependencies must be installed before you can use these tools.
 On Ubuntu 16.04, you can install everything with:
 
 	sudo apt install python3-pip xsltproc libxml2-utils xmlstarlet libxml-xpath-perl recode html-xml-utils librsvg2-bin libimage-exiftool-perl zip epubcheck calibre default-jre
-	sudo pip3 install pyhyphen roman titlecase beautifulsoup4 smartypants pillow gitpython cssselect regex lxml
+	pip3 install pyhyphen roman titlecase beautifulsoup4 smartypants gitpython cssselect regex lxml
 
 	# Install hyphenation dictionaries for the pyhyphen library
-	sudo python3 -c "exec(\"from hyphen import dictools\\ndictools.install('en_GB')\\ndictools.install('en_US')\")"
+	# Skip this for now, it's currently broken upstream
+	# sudo python3 -c "exec(\"from hyphen import dictools\\ndictools.install('en_GB')\\ndictools.install('en_US')\")"
 
 	# Install required fonts
 	mkdir -p ~/.fonts/
