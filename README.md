@@ -16,8 +16,8 @@ Several dependencies must be installed before you can use these tools.
 
 On Ubuntu 16.04, you can install everything with:
 
-	sudo apt install python3-pip xsltproc libxml2-utils xmlstarlet libxml-xpath-perl recode html-xml-utils librsvg2-bin libimage-exiftool-perl zip epubcheck calibre default-jre
-	pip3 install pyhyphen roman titlecase beautifulsoup4 smartypants gitpython cssselect regex lxml
+	sudo apt install python3-pip xsltproc libxml2-utils xmlstarlet libxml-xpath-perl html-xml-utils librsvg2-bin libimage-exiftool-perl zip epubcheck calibre default-jre
+	pip3 install pyhyphen roman titlecase beautifulsoup4 smartypants gitpython cssselect regex lxml python-magic
 
 	# Install hyphenation dictionaries for the pyhyphen library
 	python3 -c "exec(\"from hyphen import dictools\\ndictools.install('en_GB')\\ndictools.install('en_US')\")"
@@ -91,6 +91,10 @@ These instructions were tested on Mac OS X 10.12. Your mileage may vary.
 -	### `endnotes2kindle`
 
 	Convert epub-friendly endnotes to Kindle-friendly popup endnotes.
+
+-	### `extract-ebook`
+
+	Extract an EPUB, MOBI, or AZW3 ebook into ./FILENAME.extracted/ or a target directory.
 
 -	### `find-mismatched-diacritics`
 
